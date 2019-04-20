@@ -41,7 +41,7 @@
     </tr>
 
       <tr>
-        <th class="name">&lt;abbr&gt;<br>abbreviationタグ</th>
+        <th class="name">&lt;abbr&gt;<br>abbreviation＝"略語"</th>
         <td class="attribute">title</td>
         <td class="code">
             <pre><code>&lt;abbr title="HyperText Markup Language">HTML&lt;/abbr></code></pre>
@@ -60,6 +60,23 @@
         </td>
         <td class="view"><b>見かけ上の太字</b></td>
         <td class="supple">最終手段。見出しはhタグ。意味の強勢はemタグ、さらに重要な強調はstrongタグを使用。</td>
+      </tr>
+
+      <tr>
+        <th class="name">&lt;blockquote&gt;</th>
+        <td class="attribute">cite</td>
+        <td class="code">
+            <pre><code>&lt;blockquote cite="https://www.aozora.gr.jp/cards/000148/files/789_14547.html">
+              &lt;p>吾輩わがはいは猫である。名前はまだ無い。どこで生れたかとんと見当けんとうがつかぬ。
+              何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。&lt;/p>
+              &lt;/blockquote></code></pre>
+        </td>
+        <td class="view">
+          <blockquote cite="https://www.aozora.gr.jp/cards/000148/files/789_14547.html">
+          吾輩わがはいは猫である。名前はまだ無い。どこで生れたかとんと見当けんとうがつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+        </blockquote>
+      </td>
+        <td class="supple">pタグで入れ子にし、ブロックボックスでサイトの引用を表す。文章中などでインラインとして引用を表したい場合はqタグを使用</td>
       </tr>
 
     <tr>
