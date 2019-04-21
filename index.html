@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <title>タグリファレンス</title>
 </head>
+
 <body>
   <table>
     <!-- ヘッダー -->
@@ -22,7 +24,7 @@
       <th class="name">&lt; &gt;<br>タグ</th>
       <td class="attribute"></td>
       <td class="code">
-          <pre><code></code></pre>
+        <pre><code></code></pre>
       </td>
       <td class="view"></td>
       <td class="supple"></td>
@@ -32,63 +34,89 @@
       <th class="name">&lt;a&gt;<br>anchorタグ</th>
       <td class="attribute">href</td>
       <td class="code">
-          <pre><code>&lt;a href="https://manablog.org/" target="_blank"&gt;マナブブログへ（笑）！&lt;/a&gt;</code></pre>
+        <pre><code>&lt;a href="https://manablog.org/" target="_blank"&gt;マナブブログへ（笑）！&lt;/a&gt;</code></pre>
       </td>
       <td class="view">
-          <a href="https://manablog.org/" target="_blank">マナブブログへ（笑）！</a>
+        <a href="https://manablog.org/" target="_blank">マナブブログへ（笑）！</a>
       </td>
       <td class="supple"></td>
     </tr>
 
-      <tr>
-        <th class="name">&lt;abbr&gt;<br>abbreviation＝"略語"</th>
-        <td class="attribute">title</td>
-        <td class="code">
-            <pre><code>&lt;abbr title="HyperText Markup Language">HTML&lt;/abbr></code></pre>
-        </td>
-        <td class="view">
-            <abbr title="HyperText Markup Language">HTML</abbr>
-        </td>
-        <td class="supple">単語にカーソルを置いてしばらく待ってください。<br>title属性を用いることで略語の説明が可能。</td>
-      </tr>
+    <tr>
+      <th class="name">&lt;abbr&gt;<br>abbreviation＝"略語"</th>
+      <td class="attribute">title</td>
+      <td class="code">
+        <pre><code>&lt;abbr title="HyperText Markup Language">HTML&lt;/abbr></code></pre>
+      </td>
+      <td class="view">
+        <abbr title="HyperText Markup Language">HTML</abbr>
+      </td>
+      <td class="supple">単語にカーソルを置いてしばらく待ってください。<br>title属性を用いることで略語の説明が可能。</td>
+    </tr>
 
-      <tr>
-        <th class="name">&lt;b&gt;</th>
-        <td class="attribute"></td>
-        <td class="code">
-            <pre><code>&lt;b>見かけ上の太字&lt;/b></code></pre>
-        </td>
-        <td class="view"><b>見かけ上の太字</b></td>
-        <td class="supple">最終手段。見出しはhタグ。意味の強勢はemタグ、さらに重要な強調はstrongタグを使用。</td>
-      </tr>
+    <tr>
+      <th class="name">&lt;b&gt;</th>
+      <td class="attribute"></td>
+      <td class="code">
+        <pre><code>&lt;b>見かけ上の太字&lt;/b></code></pre>
+      </td>
+      <td class="view"><b>見かけ上の太字</b></td>
+      <td class="supple">最終手段。見出しはhタグ。意味の強勢はemタグ、さらに重要な強調はstrongタグを使用。</td>
+    </tr>
 
-      <tr>
-        <th class="name">&lt;blockquote&gt;</th>
-        <td class="attribute">cite</td>
-        <td class="code">
-            <pre><code>&lt;blockquote cite="https://www.aozora.gr.jp/cards/000148/files/789_14547.html">
+    <tr>
+      <th class="name">&lt;blockquote&gt;</th>
+      <td class="attribute">cite</td>
+      <td class="code">
+        &lt;blockquote cite="https://www.aozora.gr.jp/cards/000148/files/789_14547.html">
               &lt;p>吾輩わがはいは猫である。名前はまだ無い。どこで生れたかとんと見当けんとうがつかぬ。
               何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。&lt;/p>
-              &lt;/blockquote></code></pre>
-        </td>
-        <td class="view">
-          <blockquote cite="https://www.aozora.gr.jp/cards/000148/files/789_14547.html">
+              &lt;/blockquote>
+      </td>
+      <td class="view">
+        <blockquote cite="https://www.aozora.gr.jp/cards/000148/files/789_14547.html">
           吾輩わがはいは猫である。名前はまだ無い。どこで生れたかとんと見当けんとうがつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
         </blockquote>
       </td>
-        <td class="supple">pタグで入れ子にし、ブロックボックスでサイトの引用を表す。文章中などでインラインとして引用を表したい場合はqタグを使用</td>
-      </tr>
+      <td class="supple">pタグで入れ子にし、ブロックボックスでサイトの引用を表す。文章中などでインラインとして引用を表したい場合はqタグを使用</td>
+    </tr>
 
-      <tr>
-        <th class="name">&lt;br&gt;<br>breakタグ</th>
-        <td class="attribute"></td>
-        <td class="code">ここで&lt;br>改行&lt;/br>
-        </td>
-        <td class="view">
-          ここで<br>改行
+    <tr>
+      <th class="name">&lt;br&gt;<br>breakタグ</th>
+      <td class="attribute"></td>
+      <td class="code">ここで&lt;br>改行&lt;/br>
       </td>
-        <td class="supple"></td>
-      </tr>
+      <td class="view">
+        ここで<br>改行
+      </td>
+      <td class="supple"></td>
+    </tr>
+
+    <tr>
+      <th class="name">&lt;button&gt;</th>
+      <td class="attribute">type属性<br>submit（送信）,reset（リセット）,button（何もしない）</td>
+      <td class="code">
+          &lt;button type="button" value="ボタンです">valueよりも優先的に表示&lt;/button>
+      </td>
+      <td class="view">
+        <button type="button" value="ボタンです">valueよりも優先的に表示</button>
+      </td>
+      <td class="supple">フォームで用いる。同様の&lt;input type="submit">と違うのは、属性とデザインが自由。<a href="">詳しくはこちら。</a></td>
+    </tr>
+
+    <tr>
+      <th class="name">&lt;cite&gt;</th>
+      <td class="attribute"></td>
+      <td class="code">
+          夏目漱石は３８歳の時&lt;cite> 吾輩は猫である&lt;/cite>を執筆した。
+      </td>
+      <td class="view">
+        夏目漱石は３８歳の時<cite>吾輩は猫である</cite>を執筆した。
+      </td>
+      <td class="supple">
+        作品のタイトルのみを表す。
+      </td>
+    </tr>
 
     <tr>
       <th>
@@ -101,12 +129,24 @@
       <td>
         <table>
           <tr>
-            <td><h1>1大見出し</h1></td>
-            <td><h2>2大見出し</h2></td>
-            <td><h3>3大見出し</h3></td>
-            <td><h4>4大見出し</h4></td>
-            <td><h5>5大見出し</h5></td>
-            <td><h6>6大見出し</h6></td>
+            <td>
+              <h1>1大見出し</h1>
+            </td>
+            <td>
+              <h2>2大見出し</h2>
+            </td>
+            <td>
+              <h3>3大見出し</h3>
+            </td>
+            <td>
+              <h4>4大見出し</h4>
+            </td>
+            <td>
+              <h5>5大見出し</h5>
+            </td>
+            <td>
+              <h6>6大見出し</h6>
+            </td>
           </tr>
         </table>
       </td>
@@ -128,8 +168,9 @@
         <p>自動的に改行されます。</p>
       </td>
       <td>
-        
+
       </td>
     </tr>
   </table>
+
 </html>
