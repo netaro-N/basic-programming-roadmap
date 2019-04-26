@@ -215,6 +215,43 @@
     </tr>
 
     <tr>
+      <th class="name">&lt;fieldset&gt;</th>
+      <td class="attribute"></td>
+      <td class="code">
+          &lt;form action="/"><br>
+            &lt;fieldset> <br>
+              &lt;legend>性別&lt;/legend> <br>
+              &lt;p>&lt;label>&lt;input type="radio" name="sex" value="male">男&lt;/label>&lt;/p>
+              &lt;p>&lt;label>&lt;input type="radio" name="sex" value="female">女&lt;/label>&lt;/p>
+            &lt;/fieldset>
+            &lt;fieldset>
+              &lt;legend>国籍&lt;/legend>
+              &lt;p>&lt;label>&lt;input type="radio" name="nation" value="japan">日本&lt;/label>&lt;/p>
+              &lt;p>&lt;label>&lt;input type="radio" name="nation" value="foreign">海外&lt;/label>&lt;/p>
+            &lt;/fieldset>
+            &lt;/form>
+      </td>
+      <td class="view">
+        <form action="/">
+        <fieldset>
+          <legend>性別</legend>
+          <p><label><input type="radio" name="sex" value="male">男</label></p>
+          <p><label><input type="radio" name="sex" value="female">女</label></p>
+        </fieldset>
+        <fieldset>
+          <legend>国籍</legend>
+          <p><label><input type="radio" name="nation" value="japan">日本</label></p>
+          <p><label><input type="radio" name="nation" value="foreign">海外</label></p>
+        </fieldset>
+        </form>
+      </td>
+      <td class="supple">
+        フォーム内の項目をグループ化することができる。
+        legendタグでグループ名をつけることができる。
+      </td>
+    </tr>
+
+    <tr>
       <th class="name">&lt;&gt;</th>
       <td class="attribute"></td>
       <td class="code">
