@@ -255,13 +255,21 @@
       <th class="name">&lt;form&gt;</th>
       <td class="attribute">method , action</td>
       <td class="code">
-          &lt; > &lt;/ >
+        &lt;form action="/" method="post"> <br>
+          &lt;p>&lt;input type="radio" name="method" value="post">POST&lt;/p> <br>
+          &lt;p>&lt;input type="radio" name="method" value="get">GET&lt;/p> <br>
+          &lt;p>&lt;input type="reset" value="リセット">&lt;/p> <br>
+          &lt;/form>
       </td>
       <td class="view">
-        
+        <form action="/" method="post">
+        <p><input type="radio" name="method" value="post">POST</p>
+        <p><input type="radio" name="method" value="get">GET</p>
+        <p><input type="reset" value="reset"></p>
+        </form>
       </td>
       <td class="supple">
-        
+        POSTは内容が暗号化されて送信される（フォームの送信に適している）。<br>GETは内容がURLに付加されて渡される（短いデータやキーワードに適している）。
       </td>
     </tr>
 
