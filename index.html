@@ -373,16 +373,35 @@
       <th class="name">&lt;input&gt;</th>
       <td class="attribute">text, password, radio, checkbox, submit</td>
       <td class="code">
-          
+          &lt;form action="/" method="POST"><br>
+            &lt;p>text：&lt;input type="text" name="name" size="20" maxlength="18" placeholder="一行のテキスト">&lt;/p><br>
+            &lt;p>password：&lt;input type="password" name="pass" size="10" maxlength="8">&lt;/p><br>
+            &lt;p>radio（１個だけ）：<br>
+              &lt;input type="radio" name="size" value="large">大<br>
+              &lt;input type="radio" name="size" value="middle">中<br>
+              &lt;input type="radio" name="size" value="small">小<br>
+            &lt;/p><br>
+            &lt;p>checkbox（複数可）：<br>
+              &lt;input type="checkbox" name="review" value="fun">面白い<br>
+              &lt;input type="checkbox" name="review" value="useful">役に立つ<br>
+              &lt;input type="checkbox" name="review" value="impressed">感動する<br>
+            &lt;/p><br>
+            &lt;input type="submit" value="無効化されてます" disabled><br>
+          &lt;/form>
       </td>
       <td class="view">
         <form action="/" method="POST">
         <p>text：<input type="text" name="name" size="20" maxlength="18" placeholder="一行のテキスト"></p>
         <p>password：<input type="password" name="pass" size="10" maxlength="8"></p>
-        <p>radio：
+        <p>radio（１個だけ）：
           <input type="radio" name="size" value="large">大
           <input type="radio" name="size" value="middle">中
           <input type="radio" name="size" value="small">小
+        </p>
+        <p>checkbox（複数可）：
+          <input type="checkbox" name="review" value="fun">面白い
+          <input type="checkbox" name="review" value="useful">役に立つ
+          <input type="checkbox" name="review" value="impressed">感動する
         </p>
         <input type="submit" value="無効化されてます" disabled>
       </form>
