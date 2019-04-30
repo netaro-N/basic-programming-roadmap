@@ -414,15 +414,24 @@
 
     <tr>
       <th class="name">&lt;label&gt;</th>
-      <td class="attribute"></td>
+      <td class="attribute">for ,form（詳しくはググって）</td>
       <td class="code">
-          
+          &lt;form action=""><br>
+              &lt;p>&lt;label for="name">名前：&lt;/label>&lt;input type="text" id="name">&lt;/p> <br>
+              &lt;p>&lt;label>年齢：&lt;input type="text" name="age">&lt;/label>&lt;/p> <br>
+          &lt;/form>
       </td>
       <td class="view">
-        
+        <form action="">
+          <p><label for="name">名前：</label><input type="text" id="name"></p>
+          <p><label>年齢：<input type="text" name="age"></label></p>
+        </form>
       </td>
       <td class="supple">
-        
+        部品名をクリックしても反応すると思います。<br>
+        以下の方法でフォーム内の部品とラベルを関連づけることができる。<br>
+        ①for属性名と部品のid属性名を一致させる（名前のとこ）<br>
+        ②labelタグにフォーム部品を入れ子にする（）<br>
       </td>
     </tr>
 
