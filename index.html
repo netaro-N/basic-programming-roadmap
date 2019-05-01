@@ -488,7 +488,7 @@
     </tr>
 
     <tr>
-      <th class="name">&lt;optgroup&gt;オプショングループタグ</th>
+      <th class="name">&lt;optgroup&gt;<br> オプショングループタグ</th>
       <td class="attribute">label ,disabled</td>
       <td class="code">
           &lt;p>
@@ -544,6 +544,52 @@
       </td>
     </tr>
   
+
+    <tr>
+      <th class="name">&lt;option&gt;</th>
+      <td class="attribute">value,selected,disabled</td>
+      <td class="code">
+        &lt;p>
+          &lt;label for="team">チームを選択：&lt;/label> <br>
+          &lt;select id="team" name="team"><br>
+          &lt;option value="rm" >レアル・マドリード&lt;/option><br>
+          &lt;option value="bl" disabled>バルセロナ&lt;/option><br>
+          &lt;option value="am">アトレティコ・マドリード&lt;/option><br>
+          &lt;/select>
+        &lt;/p><br>
+        &lt;p>
+          &lt;label for="t">チームを検索：&lt;/label><br>
+          &lt;input type="search" id="t" name="t" autocomplete="on" list="keywords"><br>
+          &lt;datalist id="keywords"><br>
+          &lt;option value="RealMadrid">レアル&lt;/option><br>
+          &lt;option value="Barcelona">バルサ&lt;/option><br>
+          &lt;option value="AtleticoMadrid">アトレティコ&lt;/option><br>
+          &lt;/datalist>
+        &lt;/p>
+      </td>
+      <td class="view">
+          <p>
+            <label for="team">チームを選択：</label>
+            <select id="team" name="team">
+            <option value="rm" >レアル・マドリード</option>
+            <option value="bl" disabled>バルセロナ</option>
+            <option value="am">アトレティコ・マドリード</option>
+            </select>
+          </p>
+          <p>
+            <label for="t">チームを検索：</label>
+            <input type="search" id="t" name="t" autocomplete="on" list="keywords">
+            <datalist id="keywords">
+            <option value="RealMadrid">レアル</option>
+            <option value="Barcelona">バルサ</option>
+            <option value="AtleticoMadrid">アトレティコ</option>
+            </datalist>
+          </p>
+      </td>
+      <td class="supple">
+          selectタグまたはdatalistタグの要素として選択肢を作成できる。<br> formによってvalue属性の値を送信可能。
+      </td>
+    </tr>
 
     <tr>
       <th class="name">&lt;&gt;</th>
