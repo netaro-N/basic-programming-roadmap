@@ -491,7 +491,28 @@
       <th class="name">&lt;optgroup&gt;オプショングループタグ</th>
       <td class="attribute">label ,disabled</td>
       <td class="code">
-
+          &lt;p>
+            ※disabled属性によって、「S席＋A席の大人」は売り切れとしています。
+          &lt;/p> <br>
+          &lt;p><br>
+            &lt;label>券種:<br>
+            &lt;select name="ticket"><br>
+            &lt;option selected>▼座席の種類を選んでください&lt;/option><br>
+            &lt;optgroup label="S席" disabled><br>
+            &lt;option value="s01">大人&lt;/option><br>
+            &lt;option value="s02">子ども&lt;/option><br>
+            &lt;/optgroup><br>
+            &lt;optgroup label="A席"><br>
+            &lt;option value="a01" disabled>大人&lt;/option><br>
+            &lt;option value="b02">子ども&lt;/option><br>
+            &lt;/optgroup><br>
+            &lt;optgroup label="自由席"><br>
+            &lt;option value="f01">大人&lt;/option><br>
+            &lt;option value="f02">子ども&lt;/option><br>
+            &lt;/optgroup><br>
+            &lt;/select><br>
+            &lt;/label><br>
+          &lt;/p>
       </td>
       <td class="view">
         <p>
