@@ -613,7 +613,18 @@
       <th class="name">&lt;pre&gt;<br>preformatted text</th>
       <td class="attribute"></td>
       <td class="code">
-          
+        &lt;pre>&lt;code>items配列をcopy配列に入れる動作を、for文とforEach文で実行している。 <br>
+          const items = ['item1', 'item2', 'item3'];<br>
+          const copy = [];<br>
+           //before<br>
+          for (let i=0; i < items.length; i++) {<br>
+            copy.push(items[i])<br>
+          }<br>
+           //after<br>
+          items.forEach(function(item){<br>
+            copy.push(item)<br>
+          });<br>
+          &lt;/code>&lt;/pre>
       </td>
       <td class="view">
         <pre><code>items配列をcopy配列に入れる動作を、for文とforEach文で実行している。
@@ -632,6 +643,20 @@
       <td class="supple">
         半角スペースや改行が、そのまま反映されます。<br>
         codeタグと組み合わせて用いることで、例えばWordPressなどのブログ記事でソースコードを表示させることができます。
+      </td>
+    </tr>
+
+    <tr>
+      <th class="name">&lt;q&gt;<br>quotationタグ</th>
+      <td class="attribute">cite</td>
+      <td class="code">
+          
+      </td>
+      <td class="view">
+        
+      </td>
+      <td class="supple">
+        
       </td>
     </tr>
 
