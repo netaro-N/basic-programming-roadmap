@@ -616,7 +616,18 @@
           
       </td>
       <td class="view">
-        
+        <pre><code>items配列をcopy配列に入れる動作を、for文とforEach文で実行している。
+          const items = ['item1', 'item2', 'item3'];
+          const copy = [];
+           //before
+          for (let i=0; i < items.length; i++) {
+            copy.push(items[i])
+          }
+           //after
+          items.forEach(function(item){
+            copy.push(item)
+          });
+        </code></pre>
       </td>
       <td class="supple">
         
