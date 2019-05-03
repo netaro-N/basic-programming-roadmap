@@ -664,6 +664,39 @@
     </tr>
 
     <tr>
+      <th class="name">&lt;select&gt;</th>
+      <td class="attribute">multiple</td>
+      <td class="code">
+          
+      </td>
+      <td class="view">
+        <p>
+          <label for="language">言語を選択してください：</label>
+          <select id="language" name="language">
+          <option value="en">英語</option>
+          <option value="de">ドイツ語</option>
+          <option value="fr">フランス語</option>
+          <option value="ja" selected>日本語</option>
+          <option value="zh">中国語</option>
+          </select>
+        </p>
+        <p>
+          <label for="contact">ご希望の連絡方法（複数選択可）：</label>
+          <select id="contact" name="contact" multiple size="5">
+          <option value="email" selected>電子メール</option>
+          <option value="tel" selected>電話</option>
+          <option value="fax" selected>ファックス</option>
+          <option value="postal" selected>郵便</option>
+          <option value="office">ご来店時に係員より説明</option>
+          </select>
+        </p>
+      </td>
+      <td class="supple">
+        labelのfor属性とselectのid属性名を一致させることで、対応させることができる。<br>またmultiple属性によって複数の選択を可能にする。Macではcommand＋クリックで複数選択可能。
+      </td>
+    </tr>
+
+    <tr>
       <th class="name">&lt;&gt;</th>
       <td class="attribute"></td>
       <td class="code">
