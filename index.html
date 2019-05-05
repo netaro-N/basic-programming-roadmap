@@ -408,7 +408,7 @@
       </td>
       <td class="supple">
         formタグ内で利用します。
-        複数行の文章を記入させたい場合はinput:text ではなく、textareタグを用いる。
+        複数行の文章を記入させたい場合はinput:text ではなく、textareaタグを用いる。
       </td>
     </tr>
 
@@ -880,15 +880,17 @@
 
     <tr>
       <th class="name">&lt;textarea&gt;</th>
-      <td class="attribute">rows, cols</td>
+      <td class="attribute">rows, cols, autofocue, maxlength, placeholder, required</td>
       <td class="code">
-          
+          &lt;textarea cols="40" rows="4" placeholder="placeholder属性で入力ヒント">&lt;/textarea>
       </td>
       <td class="view">
-        
+          <textarea cols="40" rows="4" placeholder="placeholder属性で入力ヒント"></textarea>
       </td>
       <td class="supple">
-        
+        &lt;input type="text"> とは異なり、複数行のテキスト入力ができる。<br>
+        cols属性は、一行当たりの最大文字数の目安を指定。初期値２０（半角）。<br>
+        rows属性は、表示行数を指定する際に使用。初期値２。<br>その他maxlength属性など様々な属性があって便利。
       </td>
     </tr>
 
