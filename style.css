@@ -1,5 +1,5 @@
 body {
-  background-color: blanchedalmond;
+  background-color: #DEDEDE;
   font-size: 0.5em;
   font-family: '遊ゴシック';
 }
@@ -15,5 +15,6 @@ table, th, td {
 }
 
 .header{
-  background-color: antiquewhite ;
+  background-color: #FFC93C ;
+  color: #204495;
 }
