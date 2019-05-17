@@ -1,3 +1,27 @@
 .source , .view {
   display: inline-block;
 }
+
+.box {
+  border: 1px solid;
+}
+
+#div2 #red {
+  color: red;
+}
+#div2 .para {
+  color: blue;
+}
+
+#div3 .para {
+  font-weight: bold;
+}
+#div3 .red{
+  color: red;
+}
+#div3 .blue{
+  color: blue;
+}
+#div3 .green{
+  color: green;
+}

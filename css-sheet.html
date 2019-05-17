@@ -8,19 +8,74 @@
   <title>css のチートシート</title>
 </head>
 <body>
+  <div>
   <div class="source">
     <pre>
     <code>
-    &lt;h1>Title&lt;/h1>
-    &lt;p>paragraph1&lt;/p>
-    &lt;p>paragraph２. &lt;a href="#">link1&lt;/a>&lt;/p>
+    &lt;h2>Title&lt;/h2>
+    &lt;p id="red" class="para red">paragraph1&lt;/p>
+    &lt;p class="para blue">paragraph２. &lt;a href="#">link1&lt;/a>&lt;/p>
   </code>
 </pre>
   </div>
   <div class="view">
-    <h1>Title</h1>
+    <h2>Title</h2>
     <p>paragraph1</p>
-    <p>paragraph２. <a href="#">link1</a></p>
+    <p>paragraph２ <a href="#">link1</a></p>
   </div>
+</div>
+
+  <div id="div2" class="box">
+  <div class="source">
+    <pre>
+    <code>
+        #red {
+          color: red;
+        }
+        .para {
+          color: blue;
+        }
+  </code>
+</pre>
+  </div>
+  <div class="view">
+      <h2>Title1</h2>
+      <p id="red" class="para red">paragraph1</p>
+      <p class="para blue">paragraph２<a href="#">link1</a>hogehoge</p>
+      <h2>Title2</h2>
+      <p class="para green">paragraph3<span>hogehoge</span>hugahuga</p>
+  </div>
+  <div>ポイント！後からclassで指定していますが、idの方が強いです！</div>
+</div>
+
+  <div id="div3" class="box">
+  <div class="source">
+    <pre>
+    <code>
+         .para {
+          font-weight: bold;
+        }
+         .red{
+          color: red;
+        }
+         .blue{
+          color: blue;
+        }
+         .green{
+          color: green;
+        }
+  </code>
+</pre>
+  </div>
+  <div class="view">
+    <h2>Title1</h2>
+    <p id="red" class="para red">paragraph1</p>
+    <p class="para blue">paragraph２<a href="#">link1</a>hogehoge</p>
+    <h2>Title2</h2>
+    <p class="para green">paragraph3<span>hogehoge</span>hugahuga</p>
+  </div>
+  <div>point! クラスを複数指定している（="para red"みたいに）ことが活きてくる！</div>
+</div>
+
 </body>
 </html>
