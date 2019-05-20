@@ -42,3 +42,10 @@
 }
 
 /*2-5：属性セレクタ*/
+#div5 .view [class]{
+  background-color: aqua;
+}
+
+#div5 .view a[href="#"]{
+  color: rgb(255, 77, 0);
+}
