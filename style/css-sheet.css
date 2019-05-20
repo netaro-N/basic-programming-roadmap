@@ -6,6 +6,7 @@
   border: 1px solid;
 }
 
+/*classとid*/
 #div2 #red {
   color: red;
 }
@@ -13,6 +14,7 @@
   color: blue;
 }
 
+/*CSSをまとめる*/
 #div3 .para {
   font-weight: bold;
 }
@@ -26,6 +28,7 @@
   color: green;
 }
 
+/*2-4：特殊なセレクタ*/
 #div4 .green > span{
   color: green;
 }
@@ -37,3 +40,5 @@
 #div4 h2 ~ p {
   font-style: oblique;
 }
+
+/*2-5：属性セレクタ*/

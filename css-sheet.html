@@ -125,8 +125,17 @@
   <div class="source">
     <pre>
     <code>
-        使用セレクタ > , + , ~
-
+      #div4 .green > span{
+        color: green;
+      }
+      
+      #div4 h2 + p {
+        background-color: rgba(255, 255, 0, 0.31);
+      }
+      
+      #div4 h2 ~ p {
+        font-style: oblique;
+      }
   </code>
 </pre>
   </div>
@@ -147,7 +156,10 @@
       <li>The last child of ul</li>
     </ul>
   </div>
-  <div>point!</div>
+  <div>
+    <p>point!”>”は指定した子要素のみなので、&lt;strong>&lt;span>hugahugaは適用されません！&lt;/span>&lt;/strong>（孫要素にspanあるけど適用されない）</p>
+  <p>”+”と”~”はややこしい。"+"は指定した隣接する要素のみ（h2の後ろがpならそれだけが背景色黄色、paragraph2と3-2は適用されない）。"~"は後ろの兄弟要素全て！（h2の後ろのpは全て斜体になってます）</p>
+  </div>
 </div>
 
 </body>
