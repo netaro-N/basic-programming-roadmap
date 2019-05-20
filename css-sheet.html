@@ -237,5 +237,39 @@
   </div>
 </div>
 
+<div id="div7" class="box">
+  <div class="source">
+    <pre>
+    <code>
+      - :first-child | 兄弟関係の同じ要素のうち、最初の要素（※子要素という考え方で説明するのは複雑になるので、兄弟関係と考えた方が良い）
+      - :last-child | ゞ、最後の要素（※子要素という考え方で説明するのは複雑になるので、兄弟関係と考えた方が良い）
+      - :only-child | その要素が唯一の子要素であれば適用される
+  </code>
+</pre>
+  </div>
+  <div class="view">
+    <h2>Title1</h2>
+    <p id="red" class="para red">paragraph1</p>
+    <input type="text">
+    <p class="para blue">paragraph２<a href="#">link1</a>hogehoge</p>
+    <h2>Title2</h2>
+    <p class="para green">paragraph3<a href="https://youtu.be/ayjyN-9uwQU">link2</a>
+      <span>hogehoge</span><strong><span>hugahuga</span></strong>
+    </p>
+    <p class="para green">paragraph3-2<a href="#">link3</a></p>
+    <ul>
+      <li>The first child of ul</li>
+      <li>2nd</li>
+      <li>3rd</li>
+      <li>The last child of ul</li>
+    </ul>
+  </div>
+  <div>
+    <p>
+      point!!
+    </p>
+  </div>
+</div>
+
 </body>
 </html>
