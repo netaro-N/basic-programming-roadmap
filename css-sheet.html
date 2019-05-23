@@ -170,7 +170,8 @@
       [class]{
         background-color: aqua;
       }
-      /*a要素のうち、href="#"を持っているもの。link2はyoutubeへのリンクになっているので適用外となる*/
+      /*a要素のうち、href="#"を持っているもの。
+        link2はyoutubeへのリンクになっているので適用外となる*/
       a[href="#"]{
         color: rgb(255, 77, 0);
       }
@@ -255,9 +256,20 @@
   <div class="source">
     <pre>
     <code>
-      - :first-child | 兄弟関係の同じ要素のうち、最初の要素（※子要素という考え方で説明するのは複雑になるので、兄弟関係と考えた方が良い）
-      - :last-child | ゞ、最後の要素（※子要素という考え方で説明するのは複雑になるので、兄弟関係と考えた方が良い）
-      - :only-child | その要素が唯一の子要素であれば適用される
+        /*2-7:構造的な擬似要素*/
+        /*兄弟関係の要素のうちの最初の要素*/
+        li:first-child {
+          background-color: #d3d3d3;
+        }
+        /*兄弟関係の要素のうちの最後の要素*/
+        li:last-child {
+          background-color: #fcfc98;
+        }
+        /*『ひとりっ子』要素なら適用
+          link2は、pの子要素だが、他にもspanがいて一人っ子ではない*/
+        a:only-child {
+          background-color: rgb(240, 88, 88);
+        }
   </code>
 </pre>
   </div>

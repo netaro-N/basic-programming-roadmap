@@ -71,3 +71,12 @@
 }
 
 /*2-7:構造的な擬似要素*/
+#div7 li:first-child {
+  background-color: #d3d3d3;
+}
+#div7 li:last-child {
+  background-color: #fcfc98;
+}
+#div7 a:only-child {
+  background-color: rgb(240, 88, 88);
+}
