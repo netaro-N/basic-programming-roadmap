@@ -56,6 +56,7 @@
         #red {
           color: red;
         }
+        /*後からclassで指定していますが、上のidの方が優先されます！*/
         .para {
           color: blue;
         }
@@ -79,13 +80,14 @@
         <li>The last child of ul</li>
       </ul>
     </div>
-  <div>ポイント！後からclassで指定していますが、idの方が強いです！</div>
 </div>
 
   <div id="div3" class="box">
   <div class="source">
     <pre>
     <code>
+      /*クラスを複数指定しているとできる
+      class="para red"みたいに*/
          .para {
           font-weight: bold;
         }
@@ -118,21 +120,25 @@
       <li>The last child of ul</li>
     </ul>
   </div>
-  <div>point! クラスを複数指定している（="para red"みたいに）ことが活きてくる！</div>
 </div>
 
 <div id="div4" class="box">
   <div class="source">
     <pre>
     <code>
+      /*point!”>”は指定した子要素のみなので、
+      &lt;strong>&lt;span>hugahuga&lt;/span>&lt;/strong>は適用されません！
+      （孫要素にspanあるけど適用されない）*/
       .green > span{
         color: green;
       }
-      
+    /*  ”+”と”~”はややこしい。
+        "+"は指定した隣接する要素のみ
+        （h2の後ろがpならそれだけが背景色黄色、paragraph2と3-2は適用されない） */
       h2 + p {
-        background-color: rgba(255, 255, 0, 0.31);
+        background-color: yellow;
       }
-      
+      /* "~"は後ろの兄弟要素全て！（h2の後ろのpは全て斜体になってます） */
       h2 ~ p {
         font-style: oblique;
       }
@@ -155,10 +161,6 @@
       <li>3rd</li>
       <li>The last child of ul</li>
     </ul>
-  </div>
-  <div>
-    <p>point!”>”は指定した子要素のみなので、&lt;strong>&lt;span>hugahugaは適用されません！&lt;/span>&lt;/strong>（孫要素にspanあるけど適用されない）</p>
-  <p>”+”と”~”はややこしい。"+"は指定した隣接する要素のみ（h2の後ろがpならそれだけが背景色黄色、paragraph2と3-2は適用されない）。"~"は後ろの兄弟要素全て！（h2の後ろのpは全て斜体になってます）</p>
   </div>
 </div>
 
