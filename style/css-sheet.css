@@ -1,7 +1,14 @@
 .source , .view {
   display: inline-block;
 }
-
+@media screen and (min-width:1060px) {
+#source1 {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 100;
+}
+}
 .box {
   border: 1px solid;
 }
